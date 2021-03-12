@@ -15,7 +15,7 @@ int main()
   for(int n = 0; n < 100; ++n)
     for(int i = 0; i < N; ++i)
       for(int j = 0; j < N; ++j)
-        a += m[i][j];
+        a += m[j][i];
 
   f = clock();
 
