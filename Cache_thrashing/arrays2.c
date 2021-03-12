@@ -2,7 +2,7 @@
 #include <time.h>
 
 //sqrt(L3 (KiB) * 1024 \ 4) 
-#define N 2000
+#define N 15000
 float m[N][N];
 
 int main()
