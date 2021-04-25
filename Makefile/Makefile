@@ -1,6 +1,7 @@
 CC = gcc
 LNK = gcc
 CCFLAGS = -g
+OBJ = arrayio.o main.o timecheck.o sort.o
 
 clean:   
 	rm *.o
@@ -11,7 +12,7 @@ cleanall: clean
 %.o: %.c
 	$(CC) -c $(CCFLAGS) -o $@ $<
 
-prog.out: arrayio.o main.o timecheck.o sort.o
+prog.out: $(OBJ) 
 	$(LNK) -o $@ $?
 
 all: prog.out
