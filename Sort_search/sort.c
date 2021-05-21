@@ -31,6 +31,7 @@ void swap( void *var1, void *var2, size_t size )
     memcpy(temp, var1, size);
     memcpy(var1, var2, size);
     memcpy(var2, temp, size);
+    free(temp);
 }
 
 /*void bubble_sort( int *arr, int arr_size )
